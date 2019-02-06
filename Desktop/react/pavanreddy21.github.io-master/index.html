@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>PavanReddy</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!--Font Awesome Icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+
+<body>
+	<header>
+		<ul class="nav-wrap">
+			<li id="logo">Pavan Reddy</li>
+			<nav>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</nav>
+		</ul>
+	</header>
+
+
+
+  <section id="home">
+		<div class="wrapper">
+			<div class="home-wrapper">
+        <h1 id="title">Hello,I am Pavan Reddy</h1>
+				<h2 id="sub-title">Scrol down to see more!</h2>
+
+				<a href="https://twitter.com/pavanreddy1998" class="round-button twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="https://github.com/pavanreddy1998" class="round-button github"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+			</div>
+		</div>
+	</section>
+
+
+
+  <section id="about">
+    <div class="wrapper">
+      <div class="inner-wrapper">
+  			<h2 class="catagory">About
+  				<img id="profile" src="images/1.jpeg" alt="profile" width="337px" height="478px"></h2>
+  			<div class="content">
+  				<p>My name is Pavan Reddy. I am currently working as intern at Zemoso Technologies.</p>
+  				<p>
+            I am currently in my final year of engineering at Sreenidhi Institute of Science and Technology
+            </p>
+  			</div>
+  		</div>
+    </div>
+  </section>
+
+
+
+
+	<section id="gallery">
+    <div class="wrapper">
+  		<h2 class="catagory" id="">Gallery</h2>
+
+
+      <div class="container">
+  <div><img src="images/2.png"/></div>
+  <div><img src="images/3.jpg"/></div>
+  <div><img src="images/4.png"/></div>
+  <div><img src="images/5.png"/></div>
+  <div><img src="images/6.jpg"/></div>
+  <div><img src="images/7.png"/></div>
+  <div><img src="images/8.jpg"/></div>
+  <div><img src="images/9.jpg"/></div>
+    <div><img src="images/10.jpg"/></div>
+        <div><img src="images/11.jpg"/></div>
+</div>
+</div>
+	</section>
+
+
+  <section id="contact">
+    <div class="wrapper">
+      <h2 class="catagory" id="">Contact Me</h2>
+    <div class="container-contact">
+      <form action="#" onsubmit="return formValidate()">
+
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Email</label>
+        <input type="text" id="email" name="lastname" placeholder="Your Email..">
+
+
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+</div>
+  </section>
+
+
+<script>
+function formValidate()
+{
+var uname = document.getElementById('fname');
+var email = document.getElementById('email');
+
+if(uname.value.length==0){
+			alert("name should not be empty");
+			return false;
+}
+
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(!email.value.match(mailformat))
+{
+	alert("You have entered an invalid email address!");
+	return false;
+}
+return true;
+}
+</script>
+
+</body>
